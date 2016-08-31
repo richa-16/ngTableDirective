@@ -1,0 +1,20 @@
+ 
+ <table border="1">
+ <tr>
+ <td>id</td>
+ <td>name</td>
+ <td>quantity</td>
+ <td>price</td>
+ <td>Action</td>
+
+ </tr>
+<tr ng-repeat="product in products" >
+<td>{{product.id}}</td>
+	<td>{{product.name}}</td>
+	<td>{{product.quantity}}</td>
+	<td>{{product.price}}</td>
+	<td> <input type="button" value="edit" ng-click="edit(product)" >
+	<input type="button" value="delete" ng-click="pdelete(product)"></td>
+</tr>
+
+</table>
